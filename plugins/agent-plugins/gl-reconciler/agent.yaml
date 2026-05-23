@@ -1,0 +1,11 @@
+name: gl-reconciler
+version: "1.0.0"
+description: Traces general ledger breaks, performs root cause analysis, and drafts correcting journal entry memos.
+category: agent
+skills:
+  - gl-reconciliation
+tools:
+  - fund-admin.gl-reconciliation
+system_prompt: prompts/system.md
+connectors:
+  - chronograph

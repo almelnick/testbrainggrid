@@ -1,0 +1,18 @@
+name: model-builder
+version: "1.0.0"
+description: Builds DCF, LBO, 3-statement, and comps models in Excel format based on user specifications.
+category: agent
+skills:
+  - dcf-model
+  - lbo-model
+  - three-statement
+  - comps-analysis
+tools:
+  - financial-analysis.dcf-model
+  - financial-analysis.lbo-model
+  - financial-analysis.three-statement
+  - financial-analysis.comps-analysis
+system_prompt: prompts/system.md
+connectors:
+  - factset
+  - daloopa

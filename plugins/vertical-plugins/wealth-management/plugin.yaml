@@ -1,0 +1,24 @@
+name: wealth-management
+version: "1.0.0"
+description: Wealth management workflow skills — client reviews, financial plans, rebalancing, and tax-loss harvesting.
+category: vertical
+skills:
+  - client-review
+  - financial-plan
+  - rebalancing
+  - tax-loss-harvesting
+commands:
+  - name: client-review
+    skill: client-review
+    description: Generate a client portfolio review report
+  - name: plan
+    skill: financial-plan
+    description: Draft a comprehensive financial plan
+  - name: rebalance
+    skill: rebalancing
+    description: Generate rebalancing recommendations
+  - name: tlh
+    skill: tax-loss-harvesting
+    description: Identify tax-loss harvesting opportunities
+connectors:
+  - morningstar

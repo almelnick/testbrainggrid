@@ -1,0 +1,12 @@
+name: statement-auditor
+version: "1.0.0"
+description: Audits LP capital account statements for accuracy, consistency, and compliance with fund documents.
+category: agent
+skills:
+  - gl-reconciliation
+tools:
+  - fund-admin.gl-reconciliation
+system_prompt: prompts/system.md
+connectors:
+  - chronograph
+  - egnyte

@@ -1,0 +1,23 @@
+# Managed Agent deployment config for kyc-screener
+agent_name: kyc-screener
+managed_agent_id: ""  # populated after first deploy
+
+model: claude-sonnet-4-6
+max_tokens: 8192
+
+system_prompt_file: ../plugins/agent-plugins/kyc-screener/prompts/system.md
+
+tools:
+  - type: plugin
+    plugin: operations
+    skills: [kyc-processing]
+
+mcp_connectors:
+  - egnyte
+
+memory:
+  enabled: false
+
+deployment:
+  region: us-east-1
+  timeout_seconds: 180

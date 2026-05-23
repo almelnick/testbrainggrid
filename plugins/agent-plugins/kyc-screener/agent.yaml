@@ -1,0 +1,11 @@
+name: kyc-screener
+version: "1.0.0"
+description: Processes KYC onboarding documents, runs compliance screening checks, and drafts onboarding decision memos.
+category: agent
+skills:
+  - kyc-processing
+tools:
+  - operations.kyc-processing
+system_prompt: prompts/system.md
+connectors:
+  - egnyte

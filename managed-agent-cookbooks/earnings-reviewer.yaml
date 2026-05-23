@@ -1,0 +1,28 @@
+# Managed Agent deployment config for earnings-reviewer
+agent_name: earnings-reviewer
+managed_agent_id: ""  # populated after first deploy
+
+model: claude-sonnet-4-6
+max_tokens: 8192
+
+system_prompt_file: ../plugins/agent-plugins/earnings-reviewer/prompts/system.md
+
+tools:
+  - type: plugin
+    plugin: equity-research
+    skills: [earnings-analysis]
+  - type: plugin
+    plugin: financial-analysis
+    skills: [three-statement]
+
+mcp_connectors:
+  - aiera
+  - factset
+
+memory:
+  enabled: true
+  scope: session
+
+deployment:
+  region: us-east-1
+  timeout_seconds: 300

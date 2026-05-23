@@ -1,0 +1,21 @@
+name: private-equity
+version: "1.0.0"
+description: Private equity workflow skills — deal sourcing, screening, IC memos, and portfolio monitoring.
+category: vertical
+skills:
+  - deal-screener
+  - ic-memo
+  - portfolio-monitor
+commands:
+  - name: screen
+    skill: deal-screener
+    description: Screen a company against investment criteria
+  - name: ic-memo
+    skill: ic-memo
+    description: Draft an Investment Committee memo
+  - name: portfolio
+    skill: portfolio-monitor
+    description: Generate a portfolio company performance summary
+connectors:
+  - pitchbook
+  - chronograph

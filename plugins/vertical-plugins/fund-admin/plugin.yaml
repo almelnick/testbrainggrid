@@ -1,0 +1,16 @@
+name: fund-admin
+version: "1.0.0"
+description: Fund administration workflow skills — GL reconciliation and NAV tie-out.
+category: vertical
+skills:
+  - gl-reconciliation
+  - nav-tieout
+commands:
+  - name: gl-recon
+    skill: gl-reconciliation
+    description: Trace GL breaks and identify root cause
+  - name: nav
+    skill: nav-tieout
+    description: Perform NAV tie-out for period close
+connectors:
+  - chronograph

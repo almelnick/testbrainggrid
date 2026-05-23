@@ -1,0 +1,21 @@
+name: equity-research
+version: "1.0.0"
+description: Equity research workflow skills — earnings notes, initiation reports, and thesis tracking.
+category: vertical
+skills:
+  - earnings-analysis
+  - initiation-report
+  - thesis-tracker
+commands:
+  - name: earnings
+    skill: earnings-analysis
+    description: Analyze an earnings release and draft a research note
+  - name: initiation
+    skill: initiation-report
+    description: Draft an initiation of coverage report
+  - name: thesis
+    skill: thesis-tracker
+    description: Track and update investment thesis vs. actuals
+connectors:
+  - aiera
+  - factset

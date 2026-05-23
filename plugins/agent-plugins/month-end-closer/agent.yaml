@@ -1,0 +1,11 @@
+name: month-end-closer
+version: "1.0.0"
+description: Manages month-end close — accruals, roll-forwards, and variance commentary for controller review.
+category: agent
+skills:
+  - gl-reconciliation
+tools:
+  - fund-admin.gl-reconciliation
+system_prompt: prompts/system.md
+connectors:
+  - chronograph

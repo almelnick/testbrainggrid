@@ -1,0 +1,21 @@
+name: lseg
+version: "1.0.0"
+description: LSEG / Refinitiv data integration — bond relative value, swap curves, and FX data analysis.
+category: partner
+partner: LSEG
+skills:
+  - bond-rv
+  - swap-curves
+  - fx-analysis
+commands:
+  - name: bond-rv
+    skill: bond-rv
+    description: Analyze bond relative value vs. benchmark curve
+  - name: swaps
+    skill: swap-curves
+    description: Pull and analyze interest rate swap curves
+  - name: fx
+    skill: fx-analysis
+    description: Analyze FX spot, forward, and volatility data
+connectors:
+  - lseg

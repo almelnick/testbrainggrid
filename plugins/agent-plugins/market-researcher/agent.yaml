@@ -1,0 +1,13 @@
+name: market-researcher
+version: "1.0.0"
+description: Produces industry overviews, competitive landscape analyses, and peer comps for research and advisory work.
+category: agent
+skills:
+  - comps-analysis
+tools:
+  - financial-analysis.comps-analysis
+system_prompt: prompts/system.md
+connectors:
+  - factset
+  - sp-global
+  - pitchbook
