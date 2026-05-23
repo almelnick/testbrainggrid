@@ -1,0 +1,14 @@
+name: earnings-reviewer
+version: "1.0.0"
+description: Analyzes earnings releases and call transcripts, updates model estimates, and drafts a research note.
+category: agent
+skills:
+  - earnings-analysis
+  - three-statement
+tools:
+  - equity-research.earnings-analysis
+  - financial-analysis.three-statement
+system_prompt: prompts/system.md
+connectors:
+  - aiera
+  - factset

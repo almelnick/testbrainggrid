@@ -1,0 +1,16 @@
+name: pitch-agent
+version: "1.0.0"
+description: End-to-end pitch book agent. Runs comps, precedent transactions, and LBO analysis, then assembles a branded pitch deck.
+category: agent
+skills:
+  - comps-analysis
+  - lbo-model
+  - cim-drafter
+tools:
+  - financial-analysis.comps-analysis
+  - financial-analysis.lbo-model
+  - investment-banking.cim-drafter
+system_prompt: prompts/system.md
+connectors:
+  - factset
+  - sp-global

@@ -1,0 +1,28 @@
+# Managed Agent deployment config for pitch-agent
+agent_name: pitch-agent
+managed_agent_id: ""  # populated after first deploy
+
+model: claude-opus-4-7
+max_tokens: 8192
+
+system_prompt_file: ../plugins/agent-plugins/pitch-agent/prompts/system.md
+
+tools:
+  - type: plugin
+    plugin: financial-analysis
+    skills: [comps-analysis, lbo-model]
+  - type: plugin
+    plugin: investment-banking
+    skills: [cim-drafter]
+
+mcp_connectors:
+  - factset
+  - sp-global
+
+memory:
+  enabled: true
+  scope: session
+
+deployment:
+  region: us-east-1
+  timeout_seconds: 300

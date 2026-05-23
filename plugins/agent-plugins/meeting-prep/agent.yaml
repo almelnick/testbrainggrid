@@ -1,0 +1,14 @@
+name: meeting-prep
+version: "1.0.0"
+description: Generates client meeting briefing packs — company profile, recent news, relationship history, and talking points.
+category: agent
+skills:
+  - market-research
+  - earnings-analysis
+tools:
+  - equity-research.earnings-analysis
+system_prompt: prompts/system.md
+connectors:
+  - factset
+  - mt-newswires
+  - aiera

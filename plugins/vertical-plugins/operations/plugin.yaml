@@ -1,0 +1,12 @@
+name: operations
+version: "1.0.0"
+description: Operations and onboarding workflow skills — KYC document processing and rules engine evaluation.
+category: vertical
+skills:
+  - kyc-processing
+commands:
+  - name: kyc
+    skill: kyc-processing
+    description: Process KYC documents and evaluate against compliance rules
+connectors:
+  - egnyte

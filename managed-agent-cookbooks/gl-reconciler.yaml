@@ -1,0 +1,24 @@
+# Managed Agent deployment config for gl-reconciler
+agent_name: gl-reconciler
+managed_agent_id: ""  # populated after first deploy
+
+model: claude-sonnet-4-6
+max_tokens: 8192
+
+system_prompt_file: ../plugins/agent-plugins/gl-reconciler/prompts/system.md
+
+tools:
+  - type: plugin
+    plugin: fund-admin
+    skills: [gl-reconciliation]
+
+mcp_connectors:
+  - chronograph
+
+memory:
+  enabled: true
+  scope: session
+
+deployment:
+  region: us-east-1
+  timeout_seconds: 600

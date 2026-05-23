@@ -1,0 +1,21 @@
+name: sp-global
+version: "1.0.0"
+description: S&P Global data integration — company tear sheets, earnings previews, and credit research.
+category: partner
+partner: S&P Global
+skills:
+  - tear-sheet
+  - earnings-preview
+  - credit-research
+commands:
+  - name: tear-sheet
+    skill: tear-sheet
+    description: Generate a company tear sheet from S&P Global data
+  - name: earnings-preview
+    skill: earnings-preview
+    description: Draft an earnings preview using S&P consensus estimates
+  - name: credit
+    skill: credit-research
+    description: Summarize S&P credit rating and outlook
+connectors:
+  - sp-global

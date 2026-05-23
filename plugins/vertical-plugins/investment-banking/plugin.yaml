@@ -1,0 +1,23 @@
+name: investment-banking
+version: "1.0.0"
+description: Investment banking workflow skills — CIMs, teasers, merger models, and deal tracking.
+category: vertical
+skills:
+  - cim-drafter
+  - teaser-drafter
+  - merger-model
+  - deal-tracker
+commands:
+  - name: cim
+    skill: cim-drafter
+    description: Draft a Confidential Information Memorandum
+  - name: teaser
+    skill: teaser-drafter
+    description: Draft a deal teaser / executive summary
+  - name: merger-model
+    skill: merger-model
+    description: Build an accretion/dilution merger model
+  - name: deal-status
+    skill: deal-tracker
+    description: Summarize deal pipeline status
+connectors: []

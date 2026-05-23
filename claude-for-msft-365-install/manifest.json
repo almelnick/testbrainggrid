@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "add_ins": [
+    {
+      "id": "excel-model-builder",
+      "display_name": "Claude Model Builder",
+      "host": "Excel",
+      "description": "Build DCF, LBO, 3-statement, and comps models directly in Excel",
+      "skills_enabled": ["dcf-model", "lbo-model", "three-statement", "comps-analysis"],
+      "ribbon_tab": "Claude",
+      "icon_url": "assets/claude-icon-32.png"
+    },
+    {
+      "id": "word-cim-drafter",
+      "display_name": "Claude Deal Docs",
+      "host": "Word",
+      "description": "Draft CIMs, teasers, IC memos, and earnings notes in Word",
+      "skills_enabled": ["cim-drafter", "teaser-drafter", "ic-memo", "earnings-analysis"],
+      "ribbon_tab": "Claude",
+      "icon_url": "assets/claude-icon-32.png"
+    },
+    {
+      "id": "outlook-meeting-prep",
+      "display_name": "Claude Meeting Prep",
+      "host": "Outlook",
+      "description": "Generate meeting briefing packs from your calendar",
+      "skills_enabled": ["meeting-prep"],
+      "ribbon_tab": "Claude",
+      "icon_url": "assets/claude-icon-32.png"
+    },
+    {
+      "id": "teams-deal-tracker",
+      "display_name": "Claude Deal Tracker",
+      "host": "Teams",
+      "description": "Track deal pipeline and get status summaries in Teams",
+      "skills_enabled": ["deal-tracker"],
+      "ribbon_tab": "Claude",
+      "icon_url": "assets/claude-icon-32.png"
+    }
+  ],
+  "api": {
+    "base_url": "https://api.anthropic.com",
+    "version": "2023-06-01",
+    "model": "claude-sonnet-4-6"
+  },
+  "auth": {
+    "type": "azure_ad",
+    "tenant_id_env": "AZURE_TENANT_ID",
+    "client_id_env": "AZURE_CLIENT_ID"
+  }
+}

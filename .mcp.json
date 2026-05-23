@@ -1,0 +1,84 @@
+{
+  "mcpServers": {
+    "daloopa": {
+      "command": "npx",
+      "args": ["-y", "@daloopa/mcp-server"],
+      "env": {
+        "DALOOPA_API_KEY": "${DALOOPA_API_KEY}"
+      }
+    },
+    "morningstar": {
+      "command": "npx",
+      "args": ["-y", "@morningstar/mcp-server"],
+      "env": {
+        "MORNINGSTAR_API_KEY": "${MORNINGSTAR_API_KEY}"
+      }
+    },
+    "sp-global": {
+      "command": "npx",
+      "args": ["-y", "@spglobal/mcp-server"],
+      "env": {
+        "SPG_CLIENT_ID": "${SPG_CLIENT_ID}",
+        "SPG_CLIENT_SECRET": "${SPG_CLIENT_SECRET}"
+      }
+    },
+    "factset": {
+      "command": "npx",
+      "args": ["-y", "@factset/mcp-server"],
+      "env": {
+        "FACTSET_API_KEY": "${FACTSET_API_KEY}",
+        "FACTSET_USERNAME": "${FACTSET_USERNAME}"
+      }
+    },
+    "moodys": {
+      "command": "npx",
+      "args": ["-y", "@moodys/mcp-server"],
+      "env": {
+        "MOODYS_API_KEY": "${MOODYS_API_KEY}"
+      }
+    },
+    "mt-newswires": {
+      "command": "npx",
+      "args": ["-y", "@mtnewswires/mcp-server"],
+      "env": {
+        "MTN_API_KEY": "${MTN_API_KEY}"
+      }
+    },
+    "aiera": {
+      "command": "npx",
+      "args": ["-y", "@aiera/mcp-server"],
+      "env": {
+        "AIERA_API_KEY": "${AIERA_API_KEY}"
+      }
+    },
+    "lseg": {
+      "command": "npx",
+      "args": ["-y", "@lseg/mcp-server"],
+      "env": {
+        "LSEG_APP_KEY": "${LSEG_APP_KEY}"
+      }
+    },
+    "pitchbook": {
+      "command": "npx",
+      "args": ["-y", "@pitchbook/mcp-server"],
+      "env": {
+        "PITCHBOOK_API_KEY": "${PITCHBOOK_API_KEY}"
+      }
+    },
+    "chronograph": {
+      "command": "npx",
+      "args": ["-y", "@chronograph/mcp-server"],
+      "env": {
+        "CHRONOGRAPH_API_KEY": "${CHRONOGRAPH_API_KEY}"
+      }
+    },
+    "egnyte": {
+      "command": "npx",
+      "args": ["-y", "@egnyte/mcp-server"],
+      "env": {
+        "EGNYTE_DOMAIN": "${EGNYTE_DOMAIN}",
+        "EGNYTE_ACCESS_TOKEN": "${EGNYTE_ACCESS_TOKEN}"
+      }
+    }
+  }
+}

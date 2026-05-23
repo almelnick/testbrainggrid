@@ -1,0 +1,27 @@
+name: financial-analysis
+version: "1.0.0"
+description: Core financial modeling skills — trading comps, DCF, LBO, 3-statement model, and Excel audit.
+category: vertical
+skills:
+  - comps-analysis
+  - dcf-model
+  - lbo-model
+  - three-statement
+  - excel-audit
+commands:
+  - name: comps
+    skill: comps-analysis
+    description: Build a trading comparables analysis
+  - name: dcf
+    skill: dcf-model
+    description: Build a DCF valuation with WACC
+  - name: lbo
+    skill: lbo-model
+    description: Build a leveraged buyout model
+  - name: 3-statement
+    skill: three-statement
+    description: Build an integrated 3-statement financial model
+  - name: audit-excel
+    skill: excel-audit
+    description: Audit an Excel model for errors and inconsistencies
+connectors: []

@@ -1,0 +1,14 @@
+name: valuation-reviewer
+version: "1.0.0"
+description: Ingests GP valuation packages, populates valuation templates, and drafts LP reporting commentary.
+category: agent
+skills:
+  - dcf-model
+  - comps-analysis
+tools:
+  - financial-analysis.dcf-model
+  - financial-analysis.comps-analysis
+system_prompt: prompts/system.md
+connectors:
+  - chronograph
+  - egnyte
